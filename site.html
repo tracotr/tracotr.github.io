@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title></title>
+    <style>
+        @font-face { 
+            font-family: monokai;
+            src: url('fonts/mononoki-Regular.ttf');
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: #1f3629;
+            color: white;
+            font-family: monokai;
+            font-size: 2.5pc;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            image-rendering: crisp-edges;
+        }
+
+        .box {
+            border: 2px whitesmoke;
+            padding: 400px 350px;
+            border-radius: 3px;
+            border-style: solid;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-section {
+            flex: 0 0 0%;
+            border-bottom: 2px solid white;
+            display: flex;
+            align-items: stretch;
+            position: relative;
+            margin: 10px;
+        }
+
+        .vertical-divider {
+            width: 150px;
+            border: 0px solid white;
+            margin: 2px;
+        }
+
+        .top-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .bottom-section {
+            flex: 1 1 0%;
+            display: flex;
+            justify-content: left;
+            margin: 10px;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .font-small {
+            font-size: 1pc;
+        }
+
+        .font-medium {
+            font-size: 2pc;
+        }
+
+        .font-large {
+            font-size: 3pc;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content-wrapper">
+            <div class="top-section">
+                <div class="top-content">
+                    <div class="font-medium" style="padding-bottom:8px;">jaxon king</div>
+                    <div class="font-small">swe trying to make some games</div>
+                    <div class="font-small">from and living in texas</div>
+                    <div class="font-small">&nbsp;&nbsp;</div>
+                    <div class="font-small">&nbsp;&nbsp;</div>
+                    <div class="font-small"><a href="https://www.github.com/tracotr" target="_blank">github</a></div>
+                    <div class="font-small"><a href="https://www.linkedin.com/in/jaxon-king/" target="_blank">linkedin</a></div>
+                </div>
+                <div class="vertical-divider">
+                    <img 
+                        src="images/self.png" 
+                        style="width:100%;height:100%;"
+                        onmouseover="this.src='images/selfsmirk.png'"
+                        onmouseout ="this.src='images/self.png'"
+                    />   
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="font-medium">myself</div>
+                <div class="font-small">&nbsp;&nbsp;- played collegiate valorant</div>
+                <div class="font-small">&nbsp;&nbsp;- like putting computers together (ask me if you want help)</div>
+                <div class="font-small">&nbsp;&nbsp;- I like cats😸</div>
+
+                <div class = "font-medium" style="padding-top: 10px;">work</div>
+                <div class="font-small">&nbsp;&nbsp;- somewhere soon!</div>
+
+                <div class = "font-medium" style="padding-top: 10px;">projects</div>
+                <div class="font-small"><a href="https://github.com/tracotr/MPAsteroids" target="_blank">mp asteroids (github)</a></div>
+                <div class="font-small">&nbsp;&nbsp;- a multiplayer 3d asteroids game</div>
+                <div class="font-small">&nbsp;&nbsp;- raylib for rendering, enet for networking</div>
+                <div class="font-small">&nbsp;&nbsp;- created to learn networking/multiplayer</div>
+                <img src="images/asteroidsexample.gif" width="300" height="125"/>
+
+                <div class="font-small">working on games in unity</div>
+                <div class="font-small">&nbsp;&nbsp;- will update soon!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
