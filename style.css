@@ -1,9 +1,192 @@
-body { font-family: mononoki, ui-monospace, Consolas, monospace; font-size: 16px; line-height: 1.5; }
-.box { width: 100%; max-width: 860px; }
-h3 { font-size: 1.25rem; margin: 2rem 0 .25rem; }
-ul { list-style: none; padding-left: 1rem; margin: .5rem 0; }
-li::before { content: "> "; color: #7fd49a; }
-a { color: #7fd49a; }
-a:hover { color: #fff; }
-.links a + a::before { content: " · "; color: #888; }
-.project img, .project iframe { width: 100%; height: auto; aspect-ratio: 16/10; border: 1px solid #fff3; }
+@font-face {
+    font-family: mononoki;
+    src: url('fonts/mononoki-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+:root {
+    --bg: #1f3629;
+    --bg-raised: #253f30;
+    --text: #f2f2ec;
+    --muted: #a9bfb0;
+    --accent: #8fe3a8;
+    --line: rgba(242, 242, 236, 0.35);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: mononoki, ui-monospace, Consolas, 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.box {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid var(--line);
+    border-radius: 3px;
+}
+
+/* ---------- header ---------- */
+
+.top-section {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--line);
+}
+
+.top-content {
+    flex: 1;
+}
+
+.top-content h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.top-content p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.contact {
+    margin-top: 16px;
+}
+
+.contact a + a::before {
+    content: " / ";
+    color: var(--muted);
+}
+
+.vertical-divider {
+    flex: 0 0 150px;
+}
+
+.vertical-divider img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+/* ---------- sections ---------- */
+
+h2 {
+    margin: 40px 0 8px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 32px 0 4px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.links {
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+.links a + a::before {
+    content: " / ";
+    color: var(--muted);
+}
+
+ul {
+    list-style: none;
+    margin: 8px 0 16px;
+    padding-left: 1rem;
+}
+
+li {
+    padding-left: 1.4em;
+    text-indent: -1.4em;
+}
+
+li::before {
+    content: "> ";
+    color: var(--accent);
+}
+
+/* ---------- links ---------- */
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--text);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- project media ---------- */
+
+.project img,
+.project iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    background: var(--bg-raised);
+}
+
+.project a:has(img):hover img {
+    border-color: var(--accent);
+}
+
+/* ---------- old classes, kept so nothing breaks ---------- */
+
+.font-small { font-size: 1rem; }
+.font-medium { font-size: 1.5rem; }
+.font-large { font-size: 2rem; }
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+    }
+
+    .vertical-divider,
+    .vertical-divider img {
+        width: 110px;
+        height: 110px;
+        flex-basis: auto;
+    }
+}
