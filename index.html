@@ -1,162 +1,104 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <title></title>
-    <style>
-        @font-face { 
-            font-family: monokai;
-            src: url('fonts/mononoki-Regular.ttf');
-        }
-
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            background-color: #1f3629;
-            color: white;
-            font-family: monokai;
-            font-size: 2.5pc;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            image-rendering: crisp-edges;
-            padding: 40px 20px;
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        .box {
-            border: 2px solid whitesmoke;
-            padding: 40px;
-            border-radius: 3px;
-            width: fit-content;
-            height: fit-content;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-        }
-
-        .content-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .top-section {
-            flex: 0 0 0%;
-            border-bottom: 2px solid white;
-            display: flex;
-            align-items: stretch;
-            position: relative;
-            margin: 10px;
-        }
-
-        .vertical-divider {
-            width: 150px;
-            border: 0px solid white;
-            margin: 2px;
-        }
-
-        .top-content {
-            flex: 1;
-            text-align: left;
-        }
-
-        .bottom-section {
-            flex: 1 1 0%;
-            display: flex;
-            justify-content: left;
-            margin: 10px;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .font-small {
-            font-size: 1pc;
-        }
-
-        .font-medium {
-            font-size: 2pc;
-        }
-
-        .font-large {
-            font-size: 3pc;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jaxon king | game developer</title>
+    <meta name="description" content="Jaxon King, game developer in Texas. Multiplayer games in Unity, raylib and Godot.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <link rel="preload" as="image" href="images/selfsmirk.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="box">
-        <div class="content-wrapper">
-            <div class="top-section">
-                <div class="top-content">
-                    <div class="font-medium" style="padding-bottom:8px;">jaxon king</div>
-                    <div class="font-small">makin games hopefully</div>
-                    <div class="font-small">probably in texas</div>
-                    <div class="font-small">&nbsp;&nbsp;</div>
-                    <div class="font-small">kingjaxon03@gmail.com</div>
-                    <div class="font-small"><a href="https://www.github.com/tracotr" target="_blank">github</a></div>
-                    <div class="font-small"><a href="https://www.linkedin.com/in/jaxon-king/" target="_blank">linkedin</a></div>
-                    <div class="font-small">&nbsp;&nbsp;</div>
-                </div>
-                <div class="vertical-divider">
-                    <img 
-                        src="images/self.png" 
-                        style="width:100%;height:100%;"
-                        onmouseover="this.src='images/selfsmirk.png'"
-                        onmouseout ="this.src='images/self.png'"
-                    />   
+    <main class="box">
+
+        <header class="top-section">
+            <div class="top-content">
+                <h1>jaxon king</h1>
+                <p>game developer, multiplayer and networking</p>
+                <p>texas, usa</p>
+                <div class="contact">
+                    <a href="mailto:kingjaxon03@gmail.com">email</a><a href="https://github.com/tracotr" target="_blank" rel="noopener">github</a><a href="https://www.linkedin.com/in/jaxon-king/" target="_blank" rel="noopener">linkedin</a>
                 </div>
             </div>
-            <div class="bottom-section">
-                <div class="font-medium">me myself i</div>
-                <div class="font-small">&nbsp;&nbsp;- almost went pro in valorant (div 3 collegiate)</div>
-                <div class="font-small">&nbsp;&nbsp;- like putting computers together (ask me if you want help)</div>
-                <div class="font-small">&nbsp;&nbsp;- i like cats😸 & ferrets too</div>
+            <div class="vertical-divider">
+                <img
+                    src="images/self.png"
+                    alt="pixel portrait of jaxon"
+                    onmouseover="this.src='images/selfsmirk.png'"
+                    onmouseout="this.src='images/self.png'"
+                >
+            </div>
+        </header>
 
-                <div class = "font-medium" style="padding-top: 10px;">work</div>
-                <div class="font-small">&nbsp;&nbsp;- Looking for work contact me @ kingjaxon03@gmail.com!!!!!!!!</div>
+        <section>
+            <h2>work</h2>
+            <p>open to game dev and software roles. <a href="mailto:kingjaxon03@gmail.com">kingjaxon03@gmail.com</a></p>
+        </section>
 
-                <div class = "font-medium" style="padding-top: 10px;">projects</div>
-                
-                <div class="font-small">Menace Machine</div>
-                <div class="font-small"><a href="https://jamzo.com/games/menace-machine" target="_blank">(Jamzo)</a></div>
-                <div class="font-small">&nbsp;&nbsp;- a multiplayer party game where you collect coins and spray graffiti</div>
-                <div class="font-small">&nbsp;&nbsp;- unity w/ webgl</div>
-                <div class="font-small">&nbsp;&nbsp;- created for the PurrNet & Jackbox gamejam. </div>
-                <div class="font-small">&nbsp;&nbsp;- Art by Jyx & Programming by ME</div>
-                <a href="https://jamzo.com/games/menace-machine" target="_blank">
-                    <img
-                        src="./images/abd5b4a7-61d0-404c-9a3e-07e521c83f0d.jpg"
-                        alt="Menace Machine (on Jamzo)"
-                        width="800"
-                        style="max-width:100%; height:auto; display:block;"
-                    />
+        <section>
+            <h2>projects</h2>
+
+            <article class="project">
+                <h3>menace machine
+                    <span class="links"><a href="https://jamzo.com/games/menace-machine" target="_blank" rel="noopener">play on jamzo</a></span>
+                </h3>
+                <ul>
+                    <li>multiplayer party game. collect coins, spray graffiti</li>
+                    <li>unity + webgl, built with purrnet networking</li>
+                    <li>made for the purrnet &amp; jackbox game jam</li>
+                    <li>programming by me, art by jyx</li>
+                </ul>
+                <a href="https://jamzo.com/games/menace-machine" target="_blank" rel="noopener">
+                    <img src="images/abd5b4a7-61d0-404c-9a3e-07e521c83f0d.jpg" alt="menace machine gameplay screenshot" loading="lazy">
                 </a>
-                
-                <div class="font-small">MP Asteroids</div>
-                <div class="font-small"><a href="https://github.com/tracotr/MPAsteroids" target="_blank">(github)</a></div>
-                <div class="font-small"><a href="https://tracotr.itch.io/mpasteroids" target="_blank">(itchio)</a></div>
-                <div class="font-small">&nbsp;&nbsp;- a multiplayer 3d asteroids game</div>
-                <div class="font-small">&nbsp;&nbsp;- raylib for rendering, enet for networking</div>
-                <div class="font-small">&nbsp;&nbsp;- created to learn networking/multiplayer</div>
-                <div class="font-small">&nbsp;&nbsp;- it's very simple, look at github page for more info</div>
-                <iframe width="800" height="500" src="https://asteroids.jaxon-king.com" title="MP Asteroids (play now)" frameborder="0" allowfullscreen></iframe>
+            </article>
 
-                <div class="font-small">working on other games in unity or godot</div>
-                <div class="font-small">&nbsp;&nbsp;- I promise I'm working on it</div>
-            </div>
-        </div>
-    </div>
+            <article class="project">
+                <h3>mp asteroids
+                    <span class="links"><a href="https://github.com/tracotr/MPAsteroids" target="_blank" rel="noopener">github</a><a href="https://tracotr.itch.io/mpasteroids" target="_blank" rel="noopener">itch.io</a></span>
+                </h3>
+                <ul>
+                    <li>multiplayer 3d asteroids</li>
+                    <li>c with raylib for rendering, enet for networking</li>
+                    <li>built to learn client/server multiplayer from scratch</li>
+                </ul>
+                <button class="play-embed" type="button" data-src="https://asteroids.jaxon-king.com" data-title="MP Asteroids">
+                    <span>▶ click to play</span>
+                </button>
+            </article>
+
+            <article class="project">
+                <h3>next up</h3>
+                <ul>
+                    <li>something...</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>about</h2>
+            <ul>
+                <li>played collegiate valorant (div 3)</li>
+                <li>build pcs for fun, happy to help with yours</li>
+                <li>cats 😸 and ferrets</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('.play-embed').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var frame = document.createElement('iframe');
+                frame.src = btn.dataset.src;
+                frame.title = btn.dataset.title;
+                frame.allow = 'fullscreen; autoplay; gamepad';
+                frame.setAttribute('allowfullscreen', '');
+                btn.replaceWith(frame);
+                frame.addEventListener('load', function () { frame.focus(); });
+            });
+        });
+    </script>
 </body>
 </html>
