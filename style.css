@@ -124,7 +124,7 @@ li {
 }
 
 li::before {
-    content: "> ";
+    content: "- ";
     color: var(--accent);
 }
 
